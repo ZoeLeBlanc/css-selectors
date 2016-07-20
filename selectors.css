@@ -1,6 +1,4 @@
-/*The sibling h4 of the red element should have a background color of red
-The sibling h4 of the blue element should have background color of blue
-.*/
+
 
 header {
 	border: 1px dotted blue;
@@ -31,6 +29,12 @@ span.active{
 
 .parent div:nth-child(3)  {
 	color: blue;
+}
+.parent div + h4:nth-of-type(1){
+	background-color: red;
+}
+.parent div + h4:nth-of-type(2){
+	background-color: blue;
 }
 
 .grandparent > h4 {
